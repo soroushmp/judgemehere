@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
     <!-- Template CSS Files -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
-    <link rel="stylesheet" href="css/materialize.min.css" >
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/yellow.css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.animatedheadline.css' %}">
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skins/yellow.css' %}">
 
     <!-- Template JS Files -->
-    <script src="js/modernizr.custom.js"></script>
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
 
 </head>
 
@@ -40,12 +42,13 @@
                         <div class="title-heading">
                             <div class="selector uppercase" id="selector">
                                 <h3 class="ah-headline p-none m-none">
-                                    <span class="font-weight-400">Hi There ! I'm</span>
-									<span class="my-name">Linda Smith</span>
+                                    <span class="font-weight-400">!نقطه تلفیق شدن احساس و منطق من</span>
+									<span class="my-name"> سروش مرادپور</span>
                                     <span class="ah-words-wrapper">
-										<b class="is-visible">web designer</b>
-										<b>developer</b>
-										<b>blogger</b>
+										<b class="is-visible">طراح وب</b>
+										<b>توسعه دهنده</b>
+                                        <b>برنامه نویس</b>
+                                        <b>بلاگر</b>
 									</span>
                                 </h3>
                             </div>
@@ -60,8 +63,8 @@
                 <div class="bl-box valign-wrapper">
                     <div class="page-title center-align">
                         <h2 class="center-align">
-                            <span data-hover="About">About </span>
-                            <span data-hover="Me">Me</span>
+                            <span data-hover="من">من</span>
+                            <span data-hover="درباره">درباره </span>
                         </h2>
                     </div>
                 </div>
@@ -71,8 +74,8 @@
                     <!-- Main Heading Starts -->
                     <div class="container page-title custom-page-title">
                         <h2 class="center-align">
-                            <span>About</span>
-                            <span>Me</span>
+                            <span>من</span>
+                            <span>درباره</span>
                         </h2>
                     </div>
                     <!-- Main Heading Ends -->
@@ -88,40 +91,40 @@
                         <div class="row">
 							<!-- Picture Starts -->
                             <div class="col s12 m4 profile-picture show-on-medium-and-down section-padding">
-								<img src="images/woman.jpg" class="responsive-img my-picture" alt="My Photo">
+								<img src="{% static 'images/woman.jpg' %}" class="responsive-img my-picture" alt="My Photo">
                             </div>
 							<!-- Picture Ends -->
-                            <div class="col s12 m8 l12 xl12 personal-info section-padding">
-                                <h6 class="uppercase"><i class="fa fa-user"></i> Personal Info</h6>
+                            <div class="col s12 m8 l12 xl12 personal-info section-padding" style="direction: rtl">
+                                <h6 class="uppercase"><i class="fa fa-user"></i> اطلاعات شخصی</h6>
 								<div class="col m12 l12 xl9 p-none">
-									<p class="second-font">I'm a Freelance Web Designer & Developer based in Moscow, Russia.
-									I have serious passion for UI effects, animations and creating intuitive, 
-									with over a decade of experience.
+									<p class="second-font">برنامه نویس، طراح وب، توسعه دهنده و پایه گذار کمپین ذهن مریض.<br>
+                                        توی این چند سالی که برنامه نویسی و مشتقاتش رو دنبال می کنم دیوونه تر از خودم پیدا نکردم<br>
+                                        <span style="color: #ffb400">با احتیاط وارد شوید!</span>
 									</p>
 								</div>
                                 <div class="col s12 m12 l6 p-none">
                                     <ul class="second-font list-1">
-                                        <li><span class="font-weight-700">First Name: </span>Linda</li>
-                                        <li><span class="font-weight-700">Last Name: </span>Smith</li>
-                                        <li><span class="font-weight-700">Date of birth: </span>21 june 1990 </li>
-                                        <li><span class="font-weight-700">Nationality: </span>Russian</li>
-										<li><span class="font-weight-700">Freelance: </span>Available</li>
+                                        <li><span class="font-weight-700">اسم: </span>سروش</li>
+                                        <li><span class="font-weight-700">فامیل: </span>مرادپور</li>
+                                        <li><span class="font-weight-700">متولد: </span>16 اسفند 1379 </li>
+                                        <li><span class="font-weight-700">ملیت: </span>ایرانی</li>
+										<li><span class="font-weight-700">وضعیت شغلی: </span>همیشه در دسترس</li>
                                     </ul>
                                 </div>
                                 <div class="col s12 m12 l6 p-none">
                                     <ul class="second-font list-2">
-                                        <li><span class="font-weight-700">Phone: </span>+34 21 18 40 10</li>
-                                        <li><span class="font-weight-700">Address: </span>Moscow, Russia</li>
-                                        <li><span class="font-weight-700">Email: </span>you@yourwebsite.com</li>
-                                        <li><span class="font-weight-700">Spoken Langages: </span>French - German</li>
-										<li><span class="font-weight-700">Skype: </span>linda.smith</li>
+                                        <li><span class="font-weight-700">شماره: </span>+98 939 046 8833</li>
+                                        <li><span class="font-weight-700">آدرس: </span>تهران ، صادقیه</li>
+                                        <li><span class="font-weight-700">ایمیل: </span>sorm1379@gmail.com</li>
+                                        <li><span class="font-weight-700">زبان: </span>فارسی - اندکی انگلیسی</li>
+                                        <li style="direction: rtl"><span class="font-weight-700" style="direction: rtl"> اینستاگرام: </span><a href="https://instagram.com/soroush._mp_">پیج شخصی</a>-<a href="https://instagram.com/developeria_">پیج برنامه نویسی</a></li>
                                     </ul>
                                 </div>
-                                <a href="#" class="btn font-weight-700">
-									Download Resume <i class="fa fa-file-pdf-o"></i>
-								</a>
-								<a href="blog-dark.html" class="btn btn-blog font-weight-700">
-									My Blog <i class="fa fa-edit"></i>
+{#                                <a href="#" class="btn font-weight-700">#}
+{#									Download Resume <i class="fa fa-file-pdf-o"></i>#}
+{#								</a>#}
+								<a href="blog-dark.html" class="btn btn-blog font-weight-700" style="font-size: 16pt;">
+									 <i class="fa fa-edit"></i>بلاگ من
 								</a>
                             </div>
                         </div>
@@ -134,18 +137,18 @@
 								<!-- Resume Menu Starts -->
                                 <div class="resume-list col l4 section-padding">
                                     <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
-                                        <div class="resume-list-item-inner">
-                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-briefcase"></i> Experience</h6>
+                                        <div class="resume-list-item-inner" style="direction: rtl">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-briefcase"></i> تجربیات </h6>
                                         </div>
                                     </div>
                                     <div class="resume-list-item" data-index="1" id="resume-list-item-1">
-                                        <div class="resume-list-item-inner">
-                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-graduation-cap"></i> Education</h6>
+                                        <div class="resume-list-item-inner" style="direction: rtl">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-graduation-cap"></i> تحصیلات </h6>
                                         </div>
                                     </div>
                                     <div class="resume-list-item" data-index="2" id="resume-list-item-2">
-                                        <div class="resume-list-item-inner">
-                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-star"></i> Skills</h6>
+                                        <div class="resume-list-item-inner" style="direction: rtl">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-star"></i> مهارت ها </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +160,7 @@
                                         <div class="resume-card resume-card-0" data-index="0">
 											<!-- Experience Header Title Starts -->
                                             <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-briefcase"></i> Experience</div>
+                                                <div class="resume-card-name"><i class="fa fa-briefcase"></i> تجربیات</div>
                                             </div>
 											<!-- Experience Header Title Ends -->
 											<!-- Experience Content Starts -->
@@ -165,25 +168,25 @@
                                                 <div class="resume-card-body-container second-font">
 													<!-- Single Experience Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Web Designer - </span>Envato</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2018</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Social Marketer - </span>LikeStoneTeam</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2013 - 2019</span>
+                                                        <p>Founder of <a href="https://likestoneteam.gearhostpreview.com">LikeStoneTeam</a>, A platform for instagram and other social media tools and automations. it was a great cooperation with Farhad Mahdian.</p>
                                                     </div>
 													<!-- Single Experience Ends -->
                                                     <span class="separator"></span>
 													<!-- Single Experience Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Web Developer - </span>Google</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2011 - 2015</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Web Developer (Django-REST-API)- </span>Apitalk</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2019 - 2020</span>
+														<p><a href="https://apitalk.ir">Apitalk</a> is a subset of <a href="https://apieco.ir">Apieco</a>, A professional team for develop and sell REST-API to companies and programmers. Thanks to Taha Ayatollahi and his expert team it was a good experience in django development world and start of an amazing cooperation </p>
                                                     </div>
 													<!-- Single Experience Ends -->
                                                     <span class="separator"></span>
 													<!-- Single Experience Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Community Manager - </span>Adobe</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2007 - 2011</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Python Developer - </span>BioDarou</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2021 - Now</span>
+														<p>Project manager of <a href="https://biodarou.com">BioDarou</a> for automations and analytics it's a long-term cooperation. a beautiful and complete automation project which is we tried very hard for it. its using by many users in BioDarou Company. Special Thanks to Taha Ayatollahi and Danyal Zarasvand  </p>
                                                     </div>
 													<!-- Single Experience Ends -->
                                                 </div>
@@ -195,32 +198,32 @@
                                         <div class="resume-card resume-card-1" data-index="1">
 											<!-- Education Header Title Starts -->
                                             <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-graduation-cap"></i> Education</div>
+                                                <div class="resume-card-name"><i class="fa fa-graduation-cap"></i> تحصیلات </div>
                                             </div>
 											<!-- Education Header Title Starts -->
                                             <div class="resume-card-body education">
                                                 <div class="resume-card-body-container second-font">
 													<!-- Single Education Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Engineering Diploma - </span>Oxford University</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2018</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Computer Science Bachelor DEGREE - </span>Science and Research Branch</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2019 - Now</span>
+														<p>Bachelor student of Computer Science in Science and Research Branch Islamic Azad University. It's the best choice for me, work and educate together in this pretty fucking field. I mean Programming! </p>
                                                     </div>
 													<!-- Single Education Ends -->
                                                     <span class="separator"></span>
 													<!-- Single Education Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Masters Degree - </span>Paris University</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2011 - 2015</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Web Design (CWA) - </span>Tehran Institute of Technology</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2017 - 2018</span>
+														<p>8 month of project base course. it was great experience because i found out the institutes are time waster! it was very good for improve knowledge but not for work in this field</p>
                                                     </div>
 													<!-- Single Education Ends -->
                                                     <span class="separator"></span>
 													<!-- Single Education Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Bachelor Degree - </span>Berlin Higher Institute</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2007 - 2011</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Self Learning - </span> World Wide Internet!</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2010 - Forever</span>
+														<p>The best teacher,mentor and adviser is internet.Youtube, Linkedin, W3schools, Stackoverflow, etc even Instagram.I learn programming my self using this tools. More than 10000 hours of tutorials and more than 10000 hours of work on projects makes me! </p>
                                                     </div>
 													<!-- Single Education Ends -->
                                                 </div>
@@ -231,7 +234,7 @@
                                         <div class="resume-card resume-card-2" data-index="2">
 											<!-- Skills Header Title Starts -->
                                             <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-star"></i> Skills</div>
+                                                <div class="resume-card-name"><i class="fa fa-star"></i> مهارت ها </div>
                                             </div>
 											<!-- Skills Header Title Starts -->
                                             <div class="resume-card-body skills">
@@ -239,16 +242,16 @@
                                                     <div class="row">
 														<!-- Skills Row Starts -->
                                                         <div class="col s6">
-															<!-- Single Skills Starts -->
+                                                            <!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">html</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+																<h6 class="uppercase">python</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">javascript</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+																<h6 class="uppercase">html</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
@@ -259,20 +262,20 @@
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">php</h6>
+																<h6 class="uppercase">javascript</h6>
 																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
 																<h6 class="uppercase">jquery</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
-															<!-- Single Skills Starts -->
+                                                            <!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">angular js</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
+																<h6 class="uppercase">django</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
                                                         </div>
@@ -281,38 +284,32 @@
                                                         <div class="col s6">
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">wordpress</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
-                                                            </div>
-															<!-- Single Skills Ends -->
-															<!-- Single Skills Starts -->
-                                                            <div class="resume-content">
-																<h6 class="uppercase">joomla</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
-                                                            </div>
-															<!-- Single Skills Ends -->
-															<!-- Single Skills Starts -->
-                                                            <div class="resume-content">
-																<h6 class="uppercase">magento</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
-                                                            </div>
-															<!-- Single Skills Ends -->
-															<!-- Single Skills Starts -->
-                                                            <div class="resume-content">
-																<h6 class="uppercase">drupal</h6>
+																<h6 class="uppercase">selenium</h6>
 																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">Adobe Photoshop</h6>
+																<h6 class="uppercase">bootstrap</h6>
 																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">Adobe illustrator</h6>
-																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
+																<h6 class="uppercase">Social Marketing</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">wordpress</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+                                                            <!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">php</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
                                                         </div>
@@ -364,7 +361,7 @@
 					<!-- Fun Facts Ends -->
                 </div>
                 <!-- End Expanded About -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+                <img alt="close" src="{% static 'images/close-button.png' %}" class="bl-icon-close" />
             </section>
             <!-- About Ends -->
             <!-- Portfolio Starts -->
@@ -401,7 +398,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-1">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-1.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-1.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
 								</a>
                             </div>
@@ -409,7 +406,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-2">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-2.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-2.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Slider Project</span></div>
 								</a>
                             </div>
@@ -417,7 +414,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-3">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-3.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-3.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Youtube Video</span></div>
 								</a>
                             </div>
@@ -425,7 +422,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-4">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-4.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-4.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Local Video</span></div>
 								</a>
                             </div>
@@ -433,7 +430,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-5">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-5.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-5.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
 								</a>
                             </div>
@@ -441,7 +438,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-6">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-6.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-6.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
 								</a>
                             </div>
@@ -449,7 +446,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-7">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-7.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-7.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
 								</a>
                             </div>
@@ -457,7 +454,7 @@
                             <!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-8">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-8.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-8.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
 								</a>
                             </div>
@@ -465,7 +462,7 @@
 							<!-- Project Starts -->
                             <div class="col s12 m6 l6 xl4" data-panel="panel-9">
                                 <a href="#">
-									<img class="responsive-img" src="images/projects/project-9.jpg" alt="Project" />
+									<img class="responsive-img" src="{% static 'images/projects/project-9.jpg' %}" alt="Project" />
 									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Image Project</span></div>
 								</a>
                             </div>
@@ -474,7 +471,7 @@
                     </div>
                 </div>
                 <!-- Portfolio Expanded Ends -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+                <img alt="close" src="{% static 'images/close-button.png' %}" class="bl-icon-close" />
             </section>
             <!-- Portfolio Section Ends -->
             <!-- Contact Section Starts -->
@@ -580,7 +577,7 @@
                     </div>
                 </div>
                 <!-- Expanded Contact Ends -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+                <img alt="close" src="{% static 'images/close-button.png' %}" class="bl-icon-close" />
             </section>
             <!-- Contact Section Ends -->
             <!-- Portfolio Panel Items Starts -->
@@ -590,7 +587,7 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <img class="responsive-img" src="images/projects/project-1.jpg" alt="project" />
+                            <img class="responsive-img" src="{% static 'images/projects/project-1.jpg' %}" alt="project" />
                         </div>
                         <!-- Project Main Content Ends -->
                         <!-- Project Details Starts -->
@@ -615,10 +612,10 @@
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
                             <div class="carousel carousel-slider">
-                                <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/projects/project-2.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/projects/project-1.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/projects/project-3.jpg" alt="project" ></a>
-                                <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/projects/project-4.jpg" alt="project" ></a>
+                                <a class="carousel-item" href="#one!"><img class="responsive-img" src="{% static 'images/projects/project-2.jpg' %}" alt="project" ></a>
+                                <a class="carousel-item" href="#two!"><img class="responsive-img" src="{% static 'images/projects/project-1.jpg' %}" alt="project" ></a>
+                                <a class="carousel-item" href="#three!"><img class="responsive-img" src="{% static 'images/projects/project-3.jpg' %}" alt="project" ></a>
+                                <a class="carousel-item" href="#four!"><img class="responsive-img" src="{% static 'images/projects/project-4.jpg' %}" alt="project" ></a>
                             </div>
                         </div>
                         <!-- Project Main Content Ends -->
@@ -669,8 +666,8 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <video id="video" class="responsive-video" controls poster="images/projects/video/video-poster.png">
-								<source src="images/projects/video/video.mp4" type="video/mp4">
+                            <video id="video" class="responsive-video" controls poster="{% static 'images/projects/video/video-poster.png' %}">
+								<source src="{% static 'images/projects/video/video.mp4' %}" type="video/mp4">
 							</video>
                         </div>
                         <!-- Project Main Content Ends -->
@@ -695,7 +692,7 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <img src="images/projects/project-5.jpg" alt="project" />
+                            <img src="{% static 'images/projects/project-5.jpg' %}" alt="project" />
                         </div>
                         <!-- Project Main Content Ends -->
                         <!-- Project Details Starts -->
@@ -719,7 +716,7 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <img src="images/projects/project-6.jpg" alt="project" />
+                            <img src="{% static 'images/projects/project-6.jpg' %}" alt="project" />
                         </div>
                         <!-- Project Main Content Ends -->
                         <!-- Project Details Starts -->
@@ -743,7 +740,7 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <img src="images/projects/project-7.jpg" alt="project" />
+                            <img src="{% static 'images/projects/project-7.jpg' %}" alt="project" />
                         </div>
                         <!-- Project Main Content Ends -->
                         <!-- Project Details Starts -->
@@ -767,7 +764,7 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <img src="images/projects/project-8.jpg" alt="project" />
+                            <img src="{% static 'images/projects/project-8.jpg' %}" alt="project" />
                         </div>
                         <!-- Project Main Content Ends -->
                         <!-- Project Details Starts -->
@@ -791,7 +788,7 @@
                     <div class="row">
                         <!-- Project Main Content Starts -->
                         <div class="col s12 l6 xl6 section-padding section-padding-right-none">
-                            <img src="images/projects/project-9.jpg" alt="project" />
+                            <img src="{% static 'images/projects/project-9.jpg' %}" alt="project" />
                         </div>
                         <!-- Project Main Content Ends -->
                         <!-- Project Details Starts -->
@@ -816,7 +813,7 @@
                     <span class="control-button bl-previous-work"><i class="fa fa-angle-left"></i></span>
                     <!-- Previous Work Icon Ends -->
                     <!-- Close Work Icon Starts -->
-					<img alt="close" src="images/close-button.png" class="control-button bl-icon-close" />
+					<img alt="close" src="{% static 'images/close-button.png' %}" class="control-button bl-icon-close" />
                     <!-- Close Work Icon Ends -->
                     <!-- Next Work Icon Starts -->
                     <span class="control-button bl-next-work"><i class="fa fa-angle-right"></i></span>
@@ -830,12 +827,12 @@
     <!-- Wrapper Ends -->
 
     <!-- Template JS Files -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/jquery.animatedheadline.js"></script>
-    <script src="js/boxlayout.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/jquery.hoverdir.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animatedheadline.js' %}"></script>
+    <script src="{% static 'js/boxlayout.js' %}"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/jquery.hoverdir.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
 
 </body>
 
